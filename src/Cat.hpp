@@ -8,17 +8,13 @@ class Cat
 {
 public:
 	Cat();	
-	void hunger();
-	void happiness();
 	void litter();
+	int eDecay();
 	std::string name;
+	
 private:
-	int happinessValue;
-	int happinessDecay;
-	
+	int disapointValue;
 	int hungerValue;
-	int hungerDecay;
-	
 	int litterDecay;
 	int litterValue;
 };

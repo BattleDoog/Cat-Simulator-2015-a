@@ -7,7 +7,7 @@ class Play
 {
 	Play();
 	void catEntertain();
-	
+	int withoutPlay;
 };
 
 #endif

@@ -21,10 +21,10 @@ Shop::Shop()
 	std::cout << "MISC." << std::endl;
 
 	shop.push_back("self cleaning litter box");
-	shop.push_back("tomato");
-	shop.push_back("aqua marine");
-	shop.push_back("green");
-	shop.push_back("magenta");
+	shop.push_back("tomato");	//cat
+	shop.push_back("green");	//cat
+	shop.push_back("magenta");	//cat
+	shop.push_back("aqua marine");	//cat
 
 	printVector(shop);
 	std::cout << std::endl;

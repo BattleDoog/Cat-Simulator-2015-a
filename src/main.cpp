@@ -2,7 +2,7 @@
 #include "Work.hpp"
 #include "User.hpp"
 #include "Play.hpp"
-
+#include "shop.hpp"
 
 int main()
 {
