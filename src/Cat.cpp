@@ -1,9 +1,9 @@
-#include "Cat.hpp"
+ #include "Cat.hpp"
 
 Cat::Cat(std::string name)
 {
 	hungerValue = 30;
-	happinessValue = 100;
+	disapointValue = 100;
 }
 void litter()
 {

@@ -31,7 +31,7 @@ Shop::Shop()
 	std::getline (std::cin, dump);
 	std::cout << std::endl;
 
-	std::copy(shop.begin(), shop.end(), dump)
+	Play::toyBag.push_back(dump);
 	shop.erase(std::find(shop.begin(), shop.end(), dump));
 	printVector(shop);
 	std::cout << "\nyou stole: " << dump << std::endl << std::endl;	
