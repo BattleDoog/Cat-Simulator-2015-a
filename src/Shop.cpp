@@ -15,7 +15,7 @@ Shop::Shop()
 
 	shop.push_back("endless ball of yarn");
 	shop.push_back("cat's meow"); 
-	shop.push_back("razr Keyboard");
+	shop.push_back("razr keyboard");
 	shop.push_back("scratching post");
 
 	std::cout << "MISC." << std::endl;
