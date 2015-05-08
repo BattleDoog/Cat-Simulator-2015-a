@@ -8,7 +8,8 @@ class Play
 {
 	Play();
 	void catEntertain();
-	void printToyBag();
+	void useToy();
+	std::string uToy;
 	int withoutPlay; 
 	std::vector<std::string> toyBag;
 };

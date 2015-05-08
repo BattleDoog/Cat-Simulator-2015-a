@@ -9,9 +9,9 @@
 class Shop
 {
 	Shop();
-	std::vector<std::string> shop;
 	void printVector();
-	//something that stores a vector
+	void userShop();
+	std::vector<std::string> shop;
 };
 
 #endif

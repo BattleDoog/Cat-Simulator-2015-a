@@ -6,6 +6,7 @@
 class Feed
 {
 	Feed();
+	void catEat();
 };
 
 #endif

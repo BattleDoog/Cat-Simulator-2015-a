@@ -4,22 +4,22 @@ Work::Work()
 {
 	int overtimeChance = rand() % 7;
 }
-void Work::gongZuo()
+void Work::gongZuo(User &user)
 {	
-	if(phrase == "work")
+	if(user::phrase == "work")
 	{
 		paycheck = workDays.size() * 3;	
 		if(overtimeChance == 0)
 		{
 			paycheck *= overtime;
 		}
-		User::walletAmount += paycheck;
+		user::walletAmount += paycheck;
 	}
 }	
 
-void daysOfWork()
+void Work::daysOfWork(User &user)
 {
-	int currentDay = User::getDayNumber();
+	int currentDay = user::getDayNumber();
 	
 	workDays.push_back(1);
 	if(currentDay % 7 == 0)

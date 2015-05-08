@@ -7,7 +7,9 @@
 class Cat
 {
 public:
-	Cat();	
+	Cat();
+	const int getDisapoint();
+	const int getHunger();
 	void litter();
 	int eDecay();
 	std::string name;

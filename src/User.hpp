@@ -10,10 +10,9 @@ class User
 public:
 	User();
 	const int getDayNumber();
-	std::vector <std::string> obtained;
+	void userInput();
 	std::string phrase;
 	int walletAmount;
-
 private:
 	int dayNumber;
 };
