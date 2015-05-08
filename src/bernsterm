@@ -1,7 +1,5 @@
 bernsterm
 
-a function that keep tracks of the day and increments(?) all the day variables when called
+distinguish between which vectors to put elements in shop.cpp (toybag v feedbag)
 
-compare to see if user has toys in bag
-
-shop if statements + moolah
+shop if statements + price moolah shop.cpp

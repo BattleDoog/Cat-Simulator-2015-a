@@ -11,7 +11,6 @@ public:
 	const int getDisapoint();
 	const int getHunger();
 	void litter();
-	int eDecay();
 	std::string name;
 	
 private:

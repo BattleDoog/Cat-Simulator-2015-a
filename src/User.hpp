@@ -12,7 +12,7 @@ public:
 	const int getDayNumber();
 	void userInput();
 	std::string phrase;
-	int walletAmount;
+	float walletAmount;
 private:
 	int dayNumber;
 };

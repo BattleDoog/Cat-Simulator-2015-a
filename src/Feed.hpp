@@ -7,6 +7,11 @@ class Feed
 {
 	Feed();
 	void catEat();
+	void setFood();
+	int withoutFood;
+	std::string setFood;
+	std::vector<std::string> feedBag;
+
 };
 
 #endif

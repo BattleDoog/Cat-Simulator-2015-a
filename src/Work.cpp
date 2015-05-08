@@ -13,7 +13,9 @@ void Work::gongZuo(User &user)
 		{
 			paycheck *= overtime;
 		}
+		
 		user::walletAmount += paycheck;
+		std::cout << "You now have: " << user::WalletAmount << std::endl;
 	}
 }	
 
@@ -24,6 +26,6 @@ void Work::daysOfWork(User &user)
 	workDays.push_back(1);
 	if(currentDay % 7 == 0)
 	{
-		vector.clear();
+		workDays.clear();
 	}
 }

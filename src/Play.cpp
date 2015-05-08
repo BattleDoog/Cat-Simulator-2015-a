@@ -14,9 +14,7 @@ void Play::catEntertain(User &user, Cat &cat)
 		std::getline(std::cin, user::phrase)
 	}	
 	else if(user::phrase.compare("play") == 0 && cat::disapointValue == 100)
-	{
 		std::cout << "Stop playing with your Cat!" << std::endl;
-	}
 
 	if(user::phrase.compare("play") != 0)
 	{
@@ -27,27 +25,31 @@ void Play::catEntertain(User &user, Cat &cat)
 		withoutPlay++;
 	}
 }
-void Play::useToy(std::string uToy, Cat &cat)
+void Play::useToy(std::string uToy, Cat &cat, Shop &shop)
 {
 	if(toyBag.size() != 0)
 	{
-		Shop::printVector(toyBag);
+		shop.printVector(toyBag);
 
 		if(uToy.compare("endless ball of yarn") == 0)
 		{
 			cat::disapointValue += 2;
+			withoutPlay = 0;
 		}
 		if (uToy.compare("scratching post") == 0)
 		{
 			cat::disapointValue += 3;
+			withoutPlay = 0;
 		}
 		if(uToy.compare("razr keyboard") == 0)
 		{
 			cat::disapointValue += 4;
+			withoutPlay = 0;
 		}
 		if(uToy.compare("cat's meow") == 0)
 		{
 			cat::disapointValue += 5;
+			withoutPlay = 0;
 		}
 	}
 	else
