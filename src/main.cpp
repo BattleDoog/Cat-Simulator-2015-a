@@ -1,8 +1,9 @@
 #include "Cat.hpp"
 #include "Work.hpp"
 #include "User.hpp"
+#include "Feed.hpp"
 #include "Play.hpp"
-#include "shop.hpp"
+#include "Shop.hpp"
 
 int main()
 {

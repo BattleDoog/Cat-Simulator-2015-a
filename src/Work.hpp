@@ -13,7 +13,7 @@ public:
 	void gongZuo();
 private:
 	const float overtime(1.25);
-	int paycheck;
+	int daycheck;
 	std::vector<int> workDays;
 };
 

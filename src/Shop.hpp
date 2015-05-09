@@ -11,7 +11,7 @@ class Shop
 	Shop();
 	void printVector();
 	void userShop();
-	int shopPrices();
+	void checkout();
 	std::vector<std::string> shop;
 	std::vector<std::string> foodShop;
 };
