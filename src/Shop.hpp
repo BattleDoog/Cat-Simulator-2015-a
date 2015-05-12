@@ -6,14 +6,19 @@
 #include <vector>
 #include <algorithm>
 
+struct allItems
+{
+	std::string itemName;
+	int price;
+};
 class Shop
 {
 	Shop();
 	void printVector();
 	void userShop();
 	void checkout();
-	std::vector<std::string> shop;
+	//std::vector<std::string> shop;
 	std::vector<std::string> foodShop;
+	std::vector<allItems> namePrice;
 };
-
 #endif

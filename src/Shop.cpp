@@ -1,29 +1,26 @@
 #include "Shop.hpp"
 
 Shop::Shop()
-{		
-	foodShop.push_back("cheap eats");
-	foodShop.push_back("normans normal chow");
-	foodShop.push_back("feline fancy");
-
-	shop.push_back("endless ball of yarn");
-	shop.push_back("cat's meow"); 
-	shop.push_back("razer keyboard");
-	shop.push_back("scratching post");
-
-	shop.push_back("self cleaning litter box");
-	shop.push_back("aqua marine");	//cat
-	shop.push_back("tomato");		//cat
-	shop.push_back("green");		//cat
-	shop.push_back("magenta");		//cat
-
+{
+	/*namePrice.push_back({"cheap eats", 2.25});
+	namePrice.push_back({"normas normal chow" , 3.50}) need to give different struct + deterior val
+	namePrice.push_back({"feline fancy", 4.75});*/ 
+	namePrice.push_back({"endless ball of yarn", 10});
+	namePrice.push_back({"scratching post", 24});
+	namePrice.push_back({"cats meow", 32});
+	namePrice.push_back({"razer keyboard", 49});
+	namePrice.push_back({"self cleaning litter box", 73});
+	namePrice.push_back({"aqua marine", 50});	//cat
+	namePrice.push_back({"tomato", 50});		//cat
+	namePrice.push_back({"green", 50});			//cat
+	namePrice.push_back({"magenta", 50});		//cat
 };
 void Shop::userShop(User &user)
 {	
 	if(user::phrase.compare("shop") == 0)
 	{
 		std::cout << "What are you buyin'?" << std::endl;
-		printVector(shop);
+		printVector(namePrice);
 		std::cout << std::endl;
 		printVector(foodShop);
 		std::cout << std::endl;
