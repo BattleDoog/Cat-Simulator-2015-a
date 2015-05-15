@@ -10,7 +10,8 @@ class Play
 	void catEntertain();
 	void useToy();
 	std::string uToy;
-	int withoutPlay; 
+	int withoutPlay;
+	int disapointFactor;
 	std::vector<std::string> toyBag;
 };
 

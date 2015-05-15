@@ -4,7 +4,8 @@ how to create new cats w/names
 litter
 number of cat elements change gameplay (litter, adopting cats)
 
-
+std::map
+iterates through vector names or so i think...
 
 
 structs for items
