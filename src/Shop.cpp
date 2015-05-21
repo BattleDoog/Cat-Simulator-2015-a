@@ -1,4 +1,4 @@
-#include "Shop.hpp"
+#include <Shop.hpp>`
 
 Shop::Shop()
 {
@@ -15,6 +15,13 @@ Shop::Shop()
 	namePrice.push_back({"green", 50});			//cat
 	namePrice.push_back({"magenta", 50});		//cat
 };
+void Shop::printVector(std::vector<std::string> test)
+{
+	for(int lolidk = 0; lolidk < test.size(); lolidk++)
+	{
+		std::cout << test[lolidk] << std::endl;
+	}
+}
 void Shop::userShop(User &user)
 {	
 	if(user.phrase.compare("shop") == 0)
@@ -80,11 +87,4 @@ void checkout(std::string bItems, User &user, Play &play, Feed &feed) //add misc
 	}
 	else
 		std::cout << "We don't serve your kind here!" << std::endl;
-}
-void Shop::printVector(std::vector<std::string> test)
-{
-	for(int lolidk = 0; lolidk < test.size(); lolidk++)
-	{
-		std::cout << test[lolidk] << std::endl;
-	}
 }

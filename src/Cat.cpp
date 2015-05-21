@@ -1,4 +1,4 @@
- #include "Cat.hpp"
+ #include <Cat.hpp>
 
 Cat::Cat(std::string name)
 {
@@ -13,7 +13,7 @@ const int Cat::getHunger()
 {
 	return hungerValue;
 }
-void litter()
+void Cat::litter()
 {
-	litterDecay = litterValue - /*number of cat elements*/
+	litterDecay = litterValue - /*number of cat elements*/0;
 }

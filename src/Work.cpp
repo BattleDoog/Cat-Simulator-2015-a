@@ -1,4 +1,4 @@
-#include "Work.hpp"
+#include <Work.hpp>
 
 Work::Work()
 {

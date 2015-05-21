@@ -7,11 +7,10 @@
 class Cat
 {
 public:
-	Cat();
+	Cat(std::string name);
 	const int getDisapoint();
 	const int getHunger();
 	void litter();
-	std::string name;
 	
 private:
 	int disapointValue;
