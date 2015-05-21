@@ -13,8 +13,9 @@ struct allItems
 };
 class Shop
 {
+public:
 	Shop();
-	void printVector();
+	void printVector(std::vector<std::string> test);
 	void userShop();
 	void checkout();
 	//std::vector<std::string> shop;

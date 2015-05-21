@@ -10,6 +10,7 @@ public:
 	Cat(std::string name);
 	const int getDisapoint();
 	const int getHunger();
+	void setHunger(int value);
 	void litter();
 	
 private:

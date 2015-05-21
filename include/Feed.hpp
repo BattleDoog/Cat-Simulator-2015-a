@@ -14,7 +14,7 @@ class Feed
 	void setFood(std::string setFood, Cat &cat, Shop &shop);
 	int withoutFood;
 	std::vector<std::string> feedBag;
-	//Shop shop;
+	Shop shop;
 };
 
 #endif

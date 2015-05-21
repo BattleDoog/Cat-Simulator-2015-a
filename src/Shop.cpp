@@ -16,7 +16,7 @@ Shop::Shop()
 	namePrice.push_back({"magenta", 50});		//cat
 };
 void Shop::printVector(std::vector<std::string> test)
-{
+{ 
 	for(int lolidk = 0; lolidk < test.size(); lolidk++)
 	{
 		std::cout << test[lolidk] << std::endl;

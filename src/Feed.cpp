@@ -8,23 +8,23 @@ void Feed::setFood(std::string setFood, Cat &cat, Shop &shop)
 {
 	if(feedBag.size() != 0)
 	{
-		Shop.printVector(feedBag);
+		shop.printVector(feedBag);
 
 		if(setFood.compare("cheap eats") == 0)
 		{
-			cat.getHunger() += 2;
+			cat.setHunger(cat.getHunger() + 2);
 			//reduce use by one
 			withoutFood = 0;
 		}
 		if(setFood.compare("normans normal chow") == 0)
 		{
-			cat.getHunger() += 3;
+			cat.setHunger(cat.getHunger() + 3);
 			//reduce use by one
 			withoutFood = 0;
 		}
 		if(setFood.compare("feline fancy") == 0)
 		{
-			cat.getHunger() += 4;
+			cat.setHunger(cat.getHunger() + 4);
 			//reduce use by one
 			withoutFood = 0;
 		}
@@ -37,7 +37,7 @@ void Feed::catEat(User &user, Cat &cat)
 	if(user.phrase.compare("feed") == 0 && cat.getHunger() < 30)
 	{
 		std::cout << "select your cat's meal" << std::endl;
-		setFood();
+		setFood(/*cat string*/);
 		std::cout << std::endl;
 		std::getline(std::cin, user.phrase)
 	}
@@ -47,7 +47,7 @@ void Feed::catEat(User &user, Cat &cat)
 	if(user.phrase.compare("play") != 0)
 	{
 		int x = withoutFood;
-		int y = cat.getHunger();
+		int y = cat.setHunger(getHunger);
 		y = 2 ^ (x/3);
 
 		withoutFood++;
